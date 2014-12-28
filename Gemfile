@@ -1,18 +1,22 @@
 source 'https://rubygems.org'
-
-
 gem 'rails', '4.1.0.beta1'
 
 gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'pg'
+
+# JSON serialization
+gem "active_model_serializers", '~> 0.8.1'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry'
 end
+
 
 
 # To use ActiveModel has_secure_password
